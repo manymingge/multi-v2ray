@@ -82,12 +82,12 @@ help(){
 
 removeV2Ray() {
     #卸载V2ray脚本
-    bash <(curl -L -s https://multi.netlify.app/go.sh) --remove >/dev/null 2>&1
+    bash <(curl -L -s https://v2rei.netlify.app/go.sh) --remove >/dev/null 2>&1
     rm -rf /etc/v2ray >/dev/null 2>&1
     rm -rf /var/log/v2ray >/dev/null 2>&1
 
     #卸载Xray脚本
-    bash <(curl -L -s https://multi.netlify.app/go.sh) --remove -x >/dev/null 2>&1
+    bash <(curl -L -s https://v2rei.netlify.app/go.sh) --remove -x >/dev/null 2>&1
     rm -rf /etc/xray >/dev/null 2>&1
     rm -rf /var/log/xray >/dev/null 2>&1
 
@@ -227,7 +227,7 @@ EOF
     fi
     
     #安装V2ray主程序
-    [[ ${INSTALL_WAY} == 0 ]] && bash <(curl -L -s https://multi.netlify.app/go.sh)
+    [[ ${INSTALL_WAY} == 0 ]] && bash <(curl -L -s https://v2rei.netlify.app/go.sh)
 }
 
 #时间同步
