@@ -18,7 +18,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://multi.netlify.app"
+BASE_SOURCE_PATH="https://v2rei.netlify.app"
 
 UTIL_PATH="/etc/v2ray_util/util.cfg"
 
