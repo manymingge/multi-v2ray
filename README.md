@@ -63,17 +63,17 @@ V2ray/Xray多用户管理脚本，向导式管理[新增|删除|修改]传输协
 
 ## 安装命令
 ```
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh
+source <(curl -sL https://v2rei.netlify.app/v2ray.sh) --zh
 ```
 
 ## 升级命令(保留配置文件更新)
 ```
-source <(curl -sL https://multi.netlify.app/v2ray.sh) -k
+source <(curl -sL https://v2rei.netlify.app/v2ray.sh) -k
 ```
 
 ## 卸载命令
 ```
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+source <(curl -sL https://v2rei.netlify.app/v2ray.sh) --remove
 ```
 
 ## 命令行参数
