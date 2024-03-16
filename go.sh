@@ -194,7 +194,7 @@ downloadV2Ray(){
     [[ $KEY == "Xray" ]] && PACK_NAME=$KEY
     DOWNLOAD_LINK="https://github.com/$REPOS/releases/download/v4.40.0/${PACK_NAME}-linux-${MACHINE}.zip"
     colorEcho ${BLUE} "Downloading $KEY: ${DOWNLOAD_LINK}"
-    curl ${PROXY} -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
+    curl ${PROXY} -6 -L -H "Cache-Control: no-cache" -o ${ZIPFILE} ${DOWNLOAD_LINK}
     if [ $? != 0 ];then
         colorEcho ${RED} "Failed to download! Please check your network or try again."
         return 3
