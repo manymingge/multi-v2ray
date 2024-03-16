@@ -96,7 +96,7 @@ def get_ip():
     """
     my_ip = ""
     try:
-        my_ip = urllib.request.urlopen('http://api.ipify.org').read()
+        my_ip = urllib.request.urlopen('https://api64.ipify.org').read()
     except Exception:
         my_ip = urllib.request.urlopen('http://icanhazip.com').read()
     return bytes.decode(my_ip).strip()
