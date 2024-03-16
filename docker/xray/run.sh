@@ -2,7 +2,7 @@
 
 UPTIME=`cat /proc/uptime |awk '{print $1}'`
 if [[ `echo "$UPTIME < 100"|bc` -eq 1 ]];then
-    LOCAL_IP=`curl -s http://api.ipify.org 2>/dev/null`
+    LOCAL_IP=`curl -s https://api64.ipify.org 2>/dev/null`
     if [[ -e /root/.iptables ]];then
         [[ `echo $LOCAL_IP|grep :` ]] && IPTABLE_WAY="ip6tables" || IPTABLE_WAY="iptables" 
         $IPTABLE_WAY-restore -c < /root/.iptables
