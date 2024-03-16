@@ -177,7 +177,7 @@ updateProject() {
     RC_FILE=`cat $RC_SERVICE|grep ExecStart|awk '{print $1}'|cut -d = -f2`
 
     if [[ ! -e $RC_FILE || -z `cat $RC_FILE|grep iptables` ]];then
-        LOCAL_IP=`curl -s http://api.ipify.org 2>/dev/null`
+        LOCAL_IP=`curl -s https://api64.ipify.org 2>/dev/null`
         [[ `echo $LOCAL_IP|grep :` ]] && IPTABLE_WAY="ip6tables" || IPTABLE_WAY="iptables" 
         if [[ ! -e $RC_FILE || -z `cat $RC_FILE|grep "/bin/bash"` ]];then
             echo "#!/bin/bash" >> $RC_FILE
