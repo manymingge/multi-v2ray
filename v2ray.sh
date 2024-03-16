@@ -235,7 +235,7 @@ timeSync() {
     if [[ ${INSTALL_WAY} == 0 ]];then
         echo -e "${Info} Time Synchronizing.. ${Font}"
         if [[ `command -v ntpdate` ]];then
-            ntpdate pool.ntp.org
+            ntpdate -6 2.pool.ntp.org
         elif [[ `command -v chronyc` ]];then
             chronyc -a makestep
         fi
